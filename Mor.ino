@@ -28,7 +28,7 @@ void loop()
 {
   random16_add_entropy( random());
 
-  Fire2012WithPalette(); 
+   CPU_animation(); 
   
   FastLED.show(); 
   FastLED.delay(1000 / FRAMES_PER_SECOND);
@@ -42,7 +42,7 @@ void loop()
 #define SPARKING 50
 
 
-void Fire2012WithPalette()
+void  CPU_animation()
 {
   static uint8_t heat[NUM_LEDS];
 
